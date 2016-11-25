@@ -1,12 +1,12 @@
 {
   "name": "ng2-healthcheck",
   "description": "angular2 health check ping module using svg animations",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Raja Sharan Mamidala <rajasharan@gmail.com>",
   "license": "MIT",
   "repository": {
-      "type": "git",
-      "url": "https://github.com/rajasharan/ng2-healthcheck"
+    "type": "git",
+    "url": "https://github.com/rajasharan/ng2-healthcheck"
   },
   "homepage": "https://github.com/rajasharan/ng2-healthcheck",
   "angular-cli": {},
