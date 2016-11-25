@@ -1,4 +1,9 @@
 <h1>{{title}}</h1>
+<svg class="svg-health-cmp">
+  <path [attr.d]="describeArc()" [attr.fill]="'none'" [attr.stroke]="color" [attr.stroke-width]="width" />
+</svg>
+
+
 <h3>Status: {{currentStatus}}</h3>
 <p>Success Count: {{success}}</p>
 <p>Failure Count: {{failure}}</p>
