@@ -87,6 +87,8 @@ export class HealthCheckComponent implements OnInit, OnDestroy {
     this.svgSubscription.unsubscribe();
   }
 
+  //http://stackoverflow.com/questions/5736398/how-to-calculate-the-svg-path-for-an-arc-of-a-circle
+
   private describeArc(): string {
     var start = this.polarToCartesian(this.cx, this.cy, this.radius, this.endAngle);
     var end = this.polarToCartesian(this.cx, this.cy, this.radius, this.startAngle);
