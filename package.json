@@ -1,6 +1,7 @@
 {
   "name": "ng2-healthcheck",
-  "version": "0.0.0",
+  "description": "angular2 health check ping module using svg animations",
+  "version": "0.0.1",
   "license": "MIT",
   "angular-cli": {},
   "scripts": {

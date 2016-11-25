@@ -3,18 +3,18 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { AppComponent } from './app.component';
+import { HealthCheckComponent } from './healthcheck.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    HealthCheckComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  exports: [ HealthCheckComponent ],
+  providers: []
 })
-export class AppModule { }
+export class HealthCheckModule { }
