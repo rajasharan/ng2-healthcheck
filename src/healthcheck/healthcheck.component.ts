@@ -33,9 +33,11 @@ export class HealthCheckComponent implements OnInit, OnDestroy {
   private width: number;
   private color: string;
   private frameTime: number;
+  private font: number;
 
   private RED: string = "#AA0000";
   private GREEN: string = "#00AA00";
+  private BLUE: string = "#446688";
 
 
   constructor(private http: Http) {
@@ -49,7 +51,8 @@ export class HealthCheckComponent implements OnInit, OnDestroy {
     this.radius = 100;
     this.width = 40;
     this.color = this.RED;
-    this.frameTime = 32
+    this.frameTime = 32;
+    this.font = 35;
   }
 
   ngOnInit(): void {
@@ -57,7 +60,7 @@ export class HealthCheckComponent implements OnInit, OnDestroy {
       .repeatWhen(() => Observable.timer(0, this.pingIntervalMilli))
       .retryWhen(err => {
         return err.do(res => {
-          this.currentStatus = res.status === 0? "Error": res.status;
+          this.currentStatus = res.status === 0? "ERR": res.status;
           this.color = this.RED;
           this.failure++;
         }).delay(this.pingIntervalMilli)
