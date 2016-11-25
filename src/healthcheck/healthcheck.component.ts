@@ -15,6 +15,7 @@ import 'rxjs/add/operator/repeatWhen';
 export class HealthCheckComponent implements OnInit, OnDestroy {
   @Input() pingUrl: string;
   @Input() pingIntervalMilli: number;
+  @Input() title: string;
 
   private timer: Observable<number>;
   private pingObservable: Observable<Response>;
